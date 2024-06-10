@@ -1,12 +1,13 @@
 import { getDocks, getHaulers } from "./database.js"
+import { alphabeticalByLocation } from "./listSorter.js"
 
 
 export const DockList = () => {
     const docks = getDocks()
-
+    const sortedDocks = alphabeticalByLocation(docks)
     let docksHTML = "<ul>"
 
-    for (const dock of docks) {
+    for (const dock of sortedDocks) {
         docksHTML += `<li data-type="dock"
                           data-location="${dock.location}"
                           data-id="${dock.id}"

@@ -1,12 +1,12 @@
 import { getHaulers,getShippingShips } from "./database.js"
-
+import { alphabeticalByName } from "./listSorter.js"
 
 export const HaulerList = () => {
     const haulers = getHaulers()
-
+    const sortedHaulers = alphabeticalByName(haulers)
     let haulerHTML = "<ul>"
 
-    for (const hauler of haulers) {
+    for (const hauler of sortedHaulers) {
         haulerHTML += `<li data-type="hauler" data-id="${hauler.id}">${hauler.name}</li>`
     }
 
