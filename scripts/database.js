@@ -13,28 +13,27 @@ const database = {
         { id: 5, name: "I'm Haul Over It", dockId: 4},
     ],
     shippingShips: [
-        { id: 1, name: "I Ship That", haulerID: 1},
-        { id: 2, name: "Oh Ship", haulerID: 1},
-        { id: 3, name: "Just A Ship", haulerID: 1},
-        { id: 4, name: "Joined At The Ship", haulerID: 1},
-        { id: 5, name: "Stiff Upper Ship", haulerID: 1},
-        { id: 6, name: "This Ship Has Sailed", haulerID: 1},
-        { id: 7, name: "I Ship You Not", haulerID: 1},
-        { id: 8, name: "Water-Ship Down", haulerID: 1},
-        { id: 9, name: "Sea-Ship Enterprise", haulerID: 1},
-        { id: 10, name: "If It Fits It Ships", haulerID: 1},
-        { id: 11, name: "Jump Hop And a Ship", haulerID: 1},
+        { id: 1, name: "I Ship That", haulerId: 1},
+        { id: 2, name: "Oh Ship", haulerId: 1},
+        { id: 3, name: "Just A Ship", haulerId: 1},
+        { id: 4, name: "Joined At The Ship", haulerId: 1},
+        { id: 5, name: "Stiff Upper Ship", haulerId: 1},
+        { id: 6, name: "This Ship Has Sailed", haulerId: 1},
+        { id: 7, name: "I Ship You Not", haulerId: 1},
+        { id: 8, name: "Water-Ship Down", haulerId: 1},
+        { id: 9, name: "Sea-Ship Enterprise", haulerId: 1},
+        { id: 10, name: "If It Fits It Ships", haulerId: 1},
+        { id: 11, name: "Jump Hop And a Ship", haulerId: 1},
     ]
 }
 
-export const getDocks = () => {
+export const getDocks = () => 
     database.docks.map((dock) => ({ ...dock }))
-}
 
-export const getHaulers = () => {
+
+export const getHaulers = () => 
     database.haulers.map((hauler) => ({ ...hauler }))
-}
 
-export const getShippingShips = () => {
+
+export const getShippingShips = () => 
     database.shippingShips.map((ship) => ({ ...ship }))
-}
