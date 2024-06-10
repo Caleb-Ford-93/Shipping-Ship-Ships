@@ -7,7 +7,7 @@ export const HaulerList = () => {
     let haulerHTML = "<ul>"
 
     for (const hauler of haulers) {
-        haulerHTML += `<li data-type"hauler" data-id"${hauler.id}">${hauler.name}</li>`
+        haulerHTML += `<li data-type="hauler" data-id="${hauler.id}">${hauler.name}</li>`
     }
 
     haulerHTML += "</ul>"
