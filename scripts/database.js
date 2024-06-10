@@ -6,10 +6,10 @@ const database = {
         { id: 4, location: "Antwerp, Belgium", volume: "12.04" }
     ],
     haulers: [
-        { id: 1, name: "Haulistic Solutions", dockId: 1},
+        { id: 1, name: "Haulistic Solutions", dockId: 2},
         { id: 2, name: "Haul Me To The Moon", dockId: 2},
         { id: 3, name: "Haul-o", dockId: 3},
-        { id: 4, name: "It's Haul Over", dockId: 1},
+        { id: 4, name: "It's Haul Over", dockId: 4},
         { id: 5, name: "I'm Haul Over It", dockId: 4},
     ],
     shippingShips: [
