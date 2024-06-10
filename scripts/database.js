@@ -28,12 +28,12 @@ const database = {
 }
 
 export const getDocks = () => 
-    database.docks.map((dock) => ({ ...dock }))
+    structuredClone(database.docks)
 
 
 export const getHaulers = () => 
-    database.haulers.map((hauler) => ({ ...hauler }))
+   structuredClone(database.haulers)
 
 
 export const getShippingShips = () => 
-    database.shippingShips.map((ship) => ({ ...ship }))
+    structuredClone(database.shippingShips)
